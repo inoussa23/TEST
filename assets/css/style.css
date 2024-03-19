@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* HEADER */
+header.home-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.689), rgba(21, 16, 16, 0.655)), url(../images/home-bg.jpg);
+    /* background: url("../images/home-bg.jpg") center; */
+    background-size: cover;
+}
+
+header.about-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.689), rgba(21, 16, 16, 0.655)), url(../images/about-bg.jpg);
+    /* background: url("../images/home-bg.jpg") center; */
+    background-size: cover;
+}
+
+header.contact-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.689), rgba(21, 16, 16, 0.655)), url(../images/contact-bg.jpg);
+    /* background: url("../images/home-bg.jpg") center; */
+    background-size: cover;
+}
+
+header.sample-post-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.689), rgba(21, 16, 16, 0.655)), url(../images/post-bg.jpg);
+    /* background: url("../images/home-bg.jpg") center; */
+    background-size: cover;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    /* background-color: black; */
+
+    position: sticky;
+    top: 0;
+}
+
+.navigation a.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navigation nav ul {
+    display: flex;
+    column-gap: 30px;
+}
+
+.navigation nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* NAVIGATION SUR MOBILE */
+header nav label {
+    color: rgba(0, 0, 0, 0.513);
+    border: 1px solid rgb(0, 0, 0);
+    display: none;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0.75rem;
+}
+
+header nav input#mobile {
+    display: none;
+}
+
+
+
+/* BANNER */
+header .banner {
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 90vh;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 7rem;
+    letter-spacing: 2px;
+    font-family: 'Protest Revolution', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 800;
+    text-align: center;
+}
+
+.banner .about-title {
+    color: #009dff;
+    padding-left: 15px;
+    font-size: 3rem;
+
+}
+
+.banner p {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Sample post banner */
+header .post-banner {
+    width: 40%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    row-gap: 20px;
+
+}
+
+header .post-banner h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-family: 'Protest Revolution', sans-serif;
+    font-weight: 800;
+    text-align: left;
+}
+
+header .post-banner p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+header .post-banner small {
+    color: white;
+    text-align: left;
+}
+
+header .post-banner small a {
+    color: rgb(0, 174, 255);
+    text-align: left;
+}
+
+/* POSTS */
+.container {
+    /* background-color: antiquewhite; */
+    width: 40%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    padding: 50px 0;
+}
+
+.container .post {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.container .post hr {
+    margin: 20px 0;
+}
+
+.container .post a h2 {
+    font-size: 2rem;
+    line-height: 45px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container .post h3 {
+    font-size: 28px;
+    font-weight: lighter;
+    color: rgb(29, 26, 26);
+}
+
+.container .post p {
+    color: gray;
+}
+
+.container .post p a {
+    color: black;
+}
+
+/* About */
+.about-container p {
+    line-height: 33px;
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+    color: black;
+}
+
+/* Contact */
+.contact-container p {
+    line-height: 33px;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.contact-container form {
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    width: 100%;
+}
+
+.contact-container form input,
+textarea {
+    width: 100%;
+    outline: none;
+    padding-bottom: 40px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 24px;
+}
+
+.contact-container form input.send-message {
+    background-color: #009dff;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    width: 50%;
+}
+
+/* Sample post */
+
+.sample-post-container p {
+    line-height: 33px;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    text-align: justify;
+    color: black;
+}
+
+.sample-post-container h2 {
+    font-size: 45px;
+}
+
+
+/* BUTTON OLDER POSTS */
+.container div .post-button {
+    background-color: #009dff;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.container .button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+/* footer div {
+    background-color: antiquewhite;
+
+} */
+
+footer div ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+footer div ul li a {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 17px 25px;
+    border-radius: 50%;
+}
+
+footer div p {
+    color: gray;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 992px) {
+
+    /* NAV */
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    .navigation {
+        background-color: white;
+    }
+
+    .navigation a.logo {
+        color: rgba(0, 0, 0, 0.902);
+    }
+
+    header nav label {
+
+        color: rgba(0, 0, 0, 0.565);
+    }
+
+    header nav ul.mobile-menu {
+        display: none;
+    }
+
+    header nav label {
+        display: flex;
+    }
+
+    header nav input#mobile:checked+ul.mobile-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        row-gap: 30px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .navigation {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .container {
+        width: 80%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navigation nav ul li a {
+        color: rgb(86, 84, 84);
+        font-size: 16px;
+    }
+
+    /* POSTS */
+    .container .post a h2 {
+
+        font-size: 1.875rem;
+        line-height: 45px;
+    }
+
+    .container .post h3 {
+        font-size: 25px;
+    }
+
+    .container .post p {
+        font-size: 15px;
+    }
+
+    /* BUTTON OLDER POSTS */
+    .container div .post-button {
+        padding: 13px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 30px 0;
+    }
+
+    footer div ul li a {
+        font-size: 22px;
+        padding: 15px 20px;
+    }
+
+    footer div p {
+        font-size: 16px;
+    }
+
+    footer div ul li a {
+        font-size: 17px;
+        padding: 12px 15px;
+    }
+
+    /* Contact */
+    .contact-container p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+
+    .contact-container form input,
+    textarea {
+        padding-bottom: 25px;
+        font-size: 18px;
+    }
+
+    .contact-container form input.send-message {
+        padding: 15px;
+
+    }
+
+    /* Sample post */
+    header .post-banner {
+        width: 80%;
+    }
+
+    header .post-banner h1 {
+        font-size: 1.75rem;
+    }
+
+    .header .post-banner p {
+
+        font-size: 1.1rem;
+    }
+    .sample-post-container p {
+        font-size: 1.1rem;
+    }
+    .sample-post-container h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .container div .post-button {
+        padding: 10px;
+    }
+
+    .container .post a h2 {
+        font-size: 1.5rem;
+        line-height: 32px;
+    }
+
+
+}
